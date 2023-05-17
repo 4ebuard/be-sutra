@@ -4,9 +4,7 @@ meta:
     name: yarn
     version: 18
 build:
-  // additionalCommands: yarn run build
-  // additionalCommands: yarn run start
-  artifacts:
+    artifacts:
     '*': /
 run:
   scriptName: dist/index.js
