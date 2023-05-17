@@ -9,6 +9,6 @@ build:
     artifacts:
     '*': /
 run:
-  scriptName: index.js
+  scriptName: dist/index.js
   persistenceMount: /data
   containerPort: 80
