@@ -1,7 +1,7 @@
 meta:
   environment: node
   toolchain:
-    name: yarn
+    name: npm
     version: 18
 build:
     artifacts:
