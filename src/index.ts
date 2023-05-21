@@ -13,7 +13,7 @@ app.get('/products', (req: Request, res: Response) => {
 })
 
 app.get('/addresses', (req: Request, res: Response) => {
-  res.setDefaultEncoding(addresses)
+  res.send(addresses)
 })
 
 //start app
