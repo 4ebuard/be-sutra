@@ -15,7 +15,7 @@ app.get('/', (req: Request, res: Response) => {
 
 app.get('/products', (req: Request, res: Response) => {
     if (req.query.title) {
-      let searchString = req.query.title?.toString()
+      let searchString = req.query.title.toString()
       res.send(products.filter(p => p.title.indexOf(searchString) > -1))
     } else {
       res.send(products) 
