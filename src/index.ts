@@ -7,9 +7,7 @@ import { addressesRouter } from './routes/addresses-router'
 
 const app = express()
 const port = process.env.PORT || 3000
-
 const helloMessage = [{title: 'Hello world'}]
-
 const parserMiddleware = bodyParser({})
 
 app.use(parserMiddleware)
@@ -26,5 +24,5 @@ app.use('/addresses', addressesRouter)
 //start app
 
 app.listen(port, () => {
-  console.log(`Example app listening on port ${port}`)
+  console.log('Example app listening on port: ${port}')
 })
